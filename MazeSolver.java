@@ -120,7 +120,7 @@ public class MazeSolver{
 						System.out.print(valor + " ");
 					}
 					else{
-						//falta criar classe asterisco
+						
 						Asterisco asterisco = (Asterisco) objeto[i][j];
 						valor =  asterisco.getValor();
 						System.out.print(valor + " ");
