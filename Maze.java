@@ -29,13 +29,14 @@ public class Maze{
 	private int getArquivoMapa(){
 		return this.arquivoMapa;
 	}
-
+	
+	//inicia a conversão do mapa lido do txt, transforma em uma lista, e depois em uma matriz de caracteres.
 	public void soluciona(){
 		listaConversao = leMapa(getArquivoMapa());
 		mapaConvertido = converteMapa(listaConversao);
 	}
 
-	//Este metodo le recebe como um parâmetro um valor de 0 a 4, lê o txt do mapa associado ao valor, cria uma lista de strings, e armazena cada
+	//Este metodo recebe como um parâmetro um valor de 0 a 4, lê o txt do mapa associado ao valor, cria uma lista de strings, e armazena cada
 	//linha como uma unica string
 	private List<String> leMapa(int value){
 		String arquivo = "mapa" + value + ".txt";
@@ -93,18 +94,4 @@ public class Maze{
 		return objeto;
 	}
 
-
-
-/*	public void imprimeSolucao(char[][] maze){
-		for (int i = 0; i<maze.length; i++){
-			for(int j =0; j<maze.length; j++){
-				System.out.print(maze[i][j] + " ");
-			}
-			System.out.println(" ");
-		}
-	}*/
-
-
-	 // metodo que recebe o mapa resolvido e devolve uma matriz char com o mapa resolvido agora espaçado
-	 // metodo que recebe matriz de char e cria uma matriz de objetos espaços/caminhos*/
 }
