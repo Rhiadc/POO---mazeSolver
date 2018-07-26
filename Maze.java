@@ -21,8 +21,8 @@ public class Maze{
 
 	public Maze(int arquivoMapa){
 		this.arquivoMapa = arquivoMapa;
-		this.objeto = new Object[10][10];
-		this.mapaConvertido = new char[10][10];
+		this.objeto = new Object[13][13];
+		this.mapaConvertido = new char[13][13];
 	}
 
 	//retorna o numero do mapa
