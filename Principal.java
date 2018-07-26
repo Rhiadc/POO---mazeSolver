@@ -9,7 +9,7 @@ public class Principal{
 
 		labirinto.soluciona();
 
-		Object[][] objeto = new Object[10][10];
+		Object[][] objeto = new Object[13][13];
 		objeto = labirinto.insere((Livre) livre, (Parede) parede, (Saida) saida, (Entrada) entrada);
 		//labirinto.imprime();
 
