@@ -2,10 +2,10 @@ import java.util.Scanner;
 public class Principal{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Entrada para o labirinto (digite um valor de 0 a 3): ");
+		System.out.print("Entrada para o labirinto (digite um valor de 0 a 4): ");
 		int num1 = sc.nextInt();
-		while(num1 != 0 && num1 != 1 && num1 != 2 && num1 != 3){
-			System.out.print("Erro, favor digite um valor de 0 a 3: ");
+		while(num1 != 0 && num1 != 1 && num1 != 2 && num1 != 3 && num1 != 4){
+			System.out.print("Erro, favor digite um valor de 0 a 4: ");
 				num1 = sc.nextInt();
 		}
 		long inicio = System.currentTimeMillis(); 
