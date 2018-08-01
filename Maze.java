@@ -20,6 +20,15 @@ public class Maze{
 		this.arquivoMapa = arquivoMapa;
 		this.objeto = new Object[13][13];
 	}
+	
+	//getters e setters da coordenada y de entrada
+	private void setCoordenadaEntrada(int coordenada){
+        	this.coordenada = coordenada;
+	}
+
+	public int getCoordenadaEntrada(){
+		return this.coordenada;
+	}
 
 	//retorna o numero do mapa
 	private int getArquivoMapa(){
@@ -35,8 +44,8 @@ public class Maze{
 
 	}
 
-	//Este metodo recebe como um parâmetro um valor de 0 a 4, lê o txt do mapa associado ao valor, cria uma lista de strings, e armazena cada
-	//linha como uma unica string
+	/*Este metodo recebe como um parâmetro um valor de 0 a 3, lê o txt do mapa associado ao valor, cria uma lista de strings, e armazena cada
+	linha como uma unica string*/
 	private List<String> leArquivoMapa(int value){
 		String arquivo = "mapa" + value + ".txt";
 		String linha;  
@@ -94,14 +103,6 @@ public class Maze{
         return objeto;
     }
 
-   
-
-    private void setCoordenadaEntrada(int coordenada){
-        this.coordenada = coordenada;
-    }
-
-    public int getCoordenadaEntrada(){
-        return this.coordenada;
-    }
+ 
 
 }
